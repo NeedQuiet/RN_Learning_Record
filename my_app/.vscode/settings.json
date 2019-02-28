@@ -1,0 +1,7 @@
+{
+	"path-intellisense.extensionOnImport": true,
+	"path-intellisense.absolutePathToWorkspace": true,
+	"path-intellisense.mappings": {
+		"src": "${workspaceRoot}/js"
+	}
+}

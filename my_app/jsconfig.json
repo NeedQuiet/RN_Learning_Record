@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"paths": {
+			"src/*": ["js/*"],
+			"oontz/*": ["js/Clients/OontZ/*"],
+		}
+	},
+	"exclude": ["node_modules"]
+}
