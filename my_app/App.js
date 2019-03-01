@@ -12,6 +12,7 @@ import { Platform, StyleSheet, Text, View } from "react-native";
 import { Directions } from "react-native-gesture-handler";
 import TextHeader from "./TextHeader";
 import News from "./TextNews";
+import TouchableTest from './TouchableOpacity-Demo'
 
 /*------------------------简单的主/交叉轴使用-------------------------*/
 /*
@@ -79,7 +80,7 @@ export default class App extends Component{
 }
 */
 
-/*------------------------View标签-------------------------*/
+/*------------------------View组件-------------------------*/
 /*
   在Web开发中，div是最重要的一个元素，是页面布局的基础
   在ReactNative开发中，View组件的作用类似div。是最基本的组件。
@@ -153,7 +154,7 @@ export default class App extends Component {
 }
 */
 
-/*------------------------Text标签-------------------------*/
+/*------------------------Text组件-------------------------*/
 /*
   常用特性：
   onPress 手指触摸时间
@@ -186,3 +187,16 @@ export default class App extends Component {
   }
 }
 */
+
+/*------------------------TouchableOpacity组件-------------------------*/
+
+export default class App extends Component{
+  render(){
+    return(
+      <View flex={1} backgroundColor='white'>
+        <TouchableTest></TouchableTest>
+      </View>
+      
+    );
+  }
+}
