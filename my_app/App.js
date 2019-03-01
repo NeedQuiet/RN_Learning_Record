@@ -10,6 +10,8 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import { Directions } from "react-native-gesture-handler";
+import TextHeader from "./TextHeader";
+import News from "./TextNews";
 
 /*------------------------简单的主/交叉轴使用-------------------------*/
 /*
@@ -145,6 +147,40 @@ export default class App extends Component {
             </View>
           </View>
         </View>
+      </View>
+    );
+  }
+}
+*/
+
+/*------------------------Text标签-------------------------*/
+/*
+  常用特性：
+  onPress 手指触摸时间
+  numberIfLines 显示多少行
+  可以设置字体颜色、大小、对齐方式等等
+ */
+/*
+const styles = StyleSheet.create({
+  flex: {
+    flex: 1,
+    backgroundColor: 'white'
+  }
+});
+
+export default class App extends Component {
+  render() {
+    let news = [
+      '1.知网低买高卖惹争议 专家：涉嫌滥用市场优势地位',
+      '2.“万年不长”的手臂终于变大了，别说没告诉你这些技巧',
+      '3.手臂足够的粗，在健身房总会受到迷一样的凝视，这严格意义上是一件好事。但真的要让手臂持续变大，真的不容易，这不是在吓唬新手，老司机们深有同感。如果你接着看下去，就会发现每一个技巧都想让你的手臂变大',
+      '4.手臂训练大多数的训练哲学：不使用完全锁住关节来保持肌肉处于张力之下，使用一定负重和力竭组，休息时间减到最少来增加强度。',
+    ];
+
+    return (
+      <View style={styles.flex}>
+        <TextHeader />
+        <News news={news}/>
       </View>
     );
   }
