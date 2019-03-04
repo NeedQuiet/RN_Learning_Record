@@ -16,6 +16,21 @@ import { Directions } from "react-native-gesture-handler";
 // import TextInputTest from './Demo/02-TextInput/TextInput-Demo'
 // import ImageTest from './Demo/04-Image/Image-Demo'
 import ScrollViewTest from './Demo/05-ScrollView/ScrollView'
+import ListViewTest from './Demo/06-ListView/ListView'
+
+/*------------------------其余组件-------------------------*/
+export default class App extends Component{
+  render(){
+    return(
+      <View flex={1} backgroundColor='white'>
+        {/* ScrollView组件 */}
+        {/* <ScrollViewTest></ScrollViewTest> */}
+        {/* ListView组件 */}
+        <ListViewTest></ListViewTest>
+      </View>
+    );
+  }
+}
 
 /*------------------------简单的主/交叉轴使用-------------------------*/
 /*
@@ -231,15 +246,3 @@ export default class App extends Component{
 }
 */
 
-/*------------------------ScrollView组件-------------------------*/
-// /*
-export default class App extends Component{
-  render(){
-    return(
-      <View flex={1} backgroundColor='white'>
-          <ScrollViewTest></ScrollViewTest>
-      </View>
-    );
-  }
-}
-// */

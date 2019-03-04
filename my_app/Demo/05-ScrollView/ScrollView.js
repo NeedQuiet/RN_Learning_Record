@@ -52,7 +52,7 @@ export default class ScrollViewTest extends Component{
     };
     _onRefresh = () =>{
         console.log('正在刷新...')
-    }
+    };
 
     render(){
 
