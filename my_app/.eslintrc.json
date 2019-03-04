@@ -46,6 +46,7 @@
 		"react/prop-types": [0],
 		"react/display-name": [0],
 		"no-mixed-spaces-and-tabs": [0],
-		"react-native/sort-styles": [0]
+		"react-native/sort-styles": [0],
+		"no-console":"off"
 	}
 }

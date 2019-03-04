@@ -10,9 +10,12 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import { Directions } from "react-native-gesture-handler";
-import TextHeader from "./TextHeader";
-import News from "./TextNews";
-import TouchableTest from './TouchableOpacity-Demo'
+// import TextHeader from "./Demo/01-Text/TextHeader";
+// import News from "./Demo/01-Text/TextNews";
+// import TouchableTest from './Demo/03-TouchableOpacity/TouchableOpacity-Demo'
+// import TextInputTest from './Demo/02-TextInput/TextInput-Demo'
+// import ImageTest from './Demo/04-Image/Image-Demo'
+import ScrollViewTest from './Demo/05-ScrollView/ScrollView'
 
 /*------------------------简单的主/交叉轴使用-------------------------*/
 /*
@@ -189,14 +192,54 @@ export default class App extends Component {
 */
 
 /*------------------------TouchableOpacity组件-------------------------*/
-
+/*
 export default class App extends Component{
   render(){
     return(
       <View flex={1} backgroundColor='white'>
         <TouchableTest></TouchableTest>
       </View>
-      
     );
   }
 }
+*/
+
+
+/*------------------------TextInputTest组件-------------------------*/
+/*
+export default class App extends Component{
+  render(){
+    return(
+      <View flex={1} backgroundColor='white'>
+          <TextInputTest></TextInputTest>
+      </View>
+    );
+  }
+}
+*/
+
+/*------------------------Image组件-------------------------*/
+/*
+export default class App extends Component{
+  render(){
+    return(
+      <View flex={1} backgroundColor='white'>
+          <ImageTest></ImageTest>
+      </View>
+    );
+  }
+}
+*/
+
+/*------------------------ScrollView组件-------------------------*/
+// /*
+export default class App extends Component{
+  render(){
+    return(
+      <View flex={1} backgroundColor='white'>
+          <ScrollViewTest></ScrollViewTest>
+      </View>
+    );
+  }
+}
+// */

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View ,TouchableOpacity,TouchableHighlight} from "react-native";
-import { Directions } from "react-native-gesture-handler";
+import {StyleSheet, Text, View ,TouchableOpacity,TouchableHighlight} from "react-native";
 
 /*
   React Native 提供3个组件用于给其他没有触摸时间的组件绑定触摸事件
