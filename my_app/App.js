@@ -8,7 +8,7 @@
  */
 
 import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
+import { Platform, StyleSheet, Text, View ,Button} from "react-native";
 import { Directions } from "react-native-gesture-handler";
 // import TextHeader from "./Demo/01-Text/TextHeader";
 // import News from "./Demo/01-Text/TextNews";
@@ -17,20 +17,35 @@ import { Directions } from "react-native-gesture-handler";
 // import ImageTest from './Demo/04-Image/Image-Demo'
 import ScrollViewTest from './Demo/05-ScrollView/ScrollView'
 import ListViewTest from './Demo/06-ListView/ListView'
+import RootNavigator from './Demo/07-Navigation/navigaiton'
+import { createStackNavigator, createAppContainer } from "react-navigation"
+import HomeScreen from './Demo/07-Navigation/HomeScreen'
+import ProfileScreen from './Demo/07-Navigation/ProfileScreen'
+
+const Navigator = createStackNavigator({
+  Home: { screen: HomeScreen },
+  Profile: { screen: ProfileScreen }
+});
+
+const App = createAppContainer(Navigator);
+export default App
 
 /*------------------------其余组件-------------------------*/
+/*
 export default class App extends Component{
   render(){
     return(
       <View flex={1} backgroundColor='white'>
-        {/* ScrollView组件 */}
-        {/* <ScrollViewTest></ScrollViewTest> */}
-        {/* ListView组件 */}
+        ScrollView组件
+        <ScrollViewTest></ScrollViewTest>
+
+        ListView组件
         <ListViewTest></ListViewTest>
       </View>
     );
   }
 }
+*/
 
 /*------------------------简单的主/交叉轴使用-------------------------*/
 /*
