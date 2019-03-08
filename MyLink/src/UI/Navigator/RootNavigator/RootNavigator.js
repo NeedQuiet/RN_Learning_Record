@@ -16,7 +16,7 @@ export const StackNav = createStackNavigator(
 	{
 		mode: "card",
 		headerLayoutPreset: "center",
-
+		headerBackTitleVisible: false,
 		navigationOptions: {
 			gesturesEnabled: true,
 

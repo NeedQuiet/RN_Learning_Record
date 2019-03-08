@@ -80,7 +80,6 @@ const navigationOptions = (optExtraStyle, navExtra = {}) => {
 				alignSelf: "center",
 				color: ColorManager.nav_tint_primary.color
 			},
-			headerBackTitleVisible: false,
 
 			headerLeftContainerStyle: {
 				marginLeft: 5

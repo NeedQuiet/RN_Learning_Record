@@ -15,7 +15,6 @@ public class MainActivity extends ReactActivity {
     protected String getMainComponentName() {
         return "MyLink";
     }
-
     @Override
     protected ReactActivityDelegate createReactActivityDelegate() {
         return new ReactActivityDelegate(this, getMainComponentName()) {
@@ -25,4 +24,5 @@ public class MainActivity extends ReactActivity {
             }
         };
     }
+
 }

@@ -9,6 +9,7 @@ import {
 import { NavigationBarOptions } from "src/Utility/PathExport";
 import { translateString } from "src/Localizations/I18n";
 
+
 /**
  * view.js中只有最基本的组件。所有的事件全都由index.js处理.所有的模块导入，只能从PathExport,react中导入。
  */

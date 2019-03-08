@@ -19,7 +19,7 @@ export class index extends BaseComponent {
 	_onBackButtonPressAndroid = () => {
 		//当return true时，会阻止默认的返回事件
 		alert("Back On Press");
-		return true;
+		return false;
 	};
 
 	BaseComponentDidMount = () => {
@@ -29,7 +29,7 @@ export class index extends BaseComponent {
 	navBtnClicked = () => {
 		this.toast.show("这是一个toast");
 
-		this.props.dispatch(showHud(true,'sdas'));
+		this.props.dispatch(showHud(true,'ddddd'));
 		this.timer = setTimeout(() => {
 			this.props.dispatch(showHud(false));
 		}, 3000);
